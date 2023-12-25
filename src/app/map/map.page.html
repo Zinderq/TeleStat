@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Map</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true">
+  <!-- Place the button above the map container -->
+  <ion-button (click)="startAnimation()">Start Car Animation</ion-button>
+  
+  <!-- Your map container where the Leaflet map is attached -->
+  <div id="mapid" style="width: 100%; height: 100%;"></div>
+  
+  <!-- Optionally, you can place the button below the map container if that fits your layout better -->
+  <!-- <ion-button (click)="startAnimation()">Start Car Animation</ion-button> -->
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Map</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="mapid" style="width: 100%; height: 100%;"></div>
+</ion-content>
+
+<ion-menu side="start" menuId="main-menu" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-button expand="block" (click)="startAnimation()">Start Car Animation</ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>

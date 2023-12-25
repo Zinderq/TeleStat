@@ -1,3 +1,19 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <img src="assets/icon/logogo.png" style="height: 80px;"> <!-- Adjust the path and size as needed -->
+      </ion-buttons>
+      <ion-title>TeleStat</ion-title>
+      <ion-buttons slot="end">
+        <ion-item routerLink="/map">Map</ion-item>
+        <ion-item routerLink="/monitor">Monitor</ion-item>
+        <ion-item routerLink="/reports">Reports</ion-item>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
 </ion-app>
+
